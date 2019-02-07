@@ -1,0 +1,43 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Asteroids</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="asteroids" class="page">
+        <div class="page-content">
+            <div class="content-block">
+                <H3>Search passing asteroids by their date</H3>
+                <form id="asteroidForm" class="list-block">
+                    <input type="text"  placeholder="Enter YYYY-MM-DD" id="asteroidDate">
+                    <input type="submit" value="search" class="button color-yellow active">
+                </form>
+
+
+                <div class="list-block media-list">
+                    <!-------pre-loader------->
+                    <div id="spin">
+                        <span style="width:42px; height:42px" class="preloader preloader-green"></span>
+                    </div>
+                    <p style="text-align: right">Km's away from Earth</p>
+                    <ul id="asteroidList">
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

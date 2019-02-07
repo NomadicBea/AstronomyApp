@@ -1,0 +1,58 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+body{
+    font-weight: 400;
+}
+
+#movieName{
+    background-color: white;
+}
+
+.list-block.media-list .item-media{
+    display: block;
+}
+
+.card{
+    box-shadow: none;
+}
+
+
+#poster{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(225, 225, 225, 0.2), 0 6px 20px 0 rgba(225, 225, 225, 0.19);
+}
+
+
+.item-title, h1, #mtitle, h4{
+    text-align: center;
+    font-weight: 300;
+}
+.item-title, #mtitle, th{
+    color:#ffc107;
+}
+
+
+#spin{
+    display: none;
+    text-align: center;
+}
+
+#asteroidInfo2{
+    list-style-type: none;
+    color: white;
+    text-align: center;
+}
